@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\utilities\compile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\utilities\clblast_exceptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\utilities\timing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\utilities\utilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\configurations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\tuning.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\kernel_preprocessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\kernels\xaxpy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\utilities\compile.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\utilities\clblast_exceptions.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\utilities\timing.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\utilities\utilities.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\configurations.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\tuning.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\routines\routine_tuner.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\kernel_preprocessor.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{9A00D29B-7C28-34D7-875D-33F7C82F1D53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{42EA4589-A2CC-31DF-AABC-ABB3B2E1F89E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DAD24DBF-011E-31B7-AC18-688264D440C5}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>alltuners</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\423a9f89b3c5402d6d3708f04a97bee3\alltuners.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+Debug\clblast_tuner_copy_fast.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_copy_fast.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_copy_fast.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_copy_fast.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_copy_fast.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_copy_pad.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_copy_pad.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_copy_pad.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_copy_pad.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_copy_pad.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_transpose_fast.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_transpose_fast.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_transpose_fast.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_transpose_fast.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_transpose_fast.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_transpose_pad.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_transpose_pad.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_transpose_pad.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_transpose_pad.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_transpose_pad.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xaxpy.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xaxpy.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xaxpy.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xaxpy.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xaxpy.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xdot.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xdot.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xdot.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xdot.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xdot.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xger.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xger.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xger.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xger.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xger.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemm_direct.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemm_direct.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemm_direct.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemm_direct.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemm_direct.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemv.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemv.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemv.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemv.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemv.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_invert.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_invert.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_invert.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_invert.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_invert.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xconvgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xconvgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xconvgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xconvgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xconvgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_routine_xgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_routine_xgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_routine_xgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_routine_xgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_routine_xgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_routine_xtrsv.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_routine_xtrsv.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_routine_xtrsv.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_routine_xtrsv.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_routine_xtrsv.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+Debug\clblast_tuner_copy_fast.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_copy_fast.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_copy_fast.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_copy_fast.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_copy_fast.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_copy_pad.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_copy_pad.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_copy_pad.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_copy_pad.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_copy_pad.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_transpose_fast.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_transpose_fast.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_transpose_fast.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_transpose_fast.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_transpose_fast.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_transpose_pad.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_transpose_pad.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_transpose_pad.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_transpose_pad.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_transpose_pad.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xaxpy.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xaxpy.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xaxpy.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xaxpy.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xaxpy.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xdot.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xdot.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xdot.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xdot.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xdot.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xger.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xger.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xger.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xger.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xger.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemm_direct.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemm_direct.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemm_direct.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemm_direct.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemm_direct.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemv.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemv.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemv.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemv.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xgemv.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_invert.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_invert.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_invert.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_invert.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_invert.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xconvgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xconvgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xconvgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xconvgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_xconvgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_routine_xgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_routine_xgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_routine_xgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_routine_xgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_routine_xgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_routine_xtrsv.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_routine_xtrsv.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_routine_xtrsv.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_routine_xtrsv.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Debug\clblast_tuner_routine_xtrsv.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/423a9f89b3c5402d6d3708f04a97bee3/alltuners.rule;D:\Sdks\videodetectorandtracker_v2\CLBlast\Debug\clblast_tuner_routine_xtrsv.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/423a9f89b3c5402d6d3708f04a97bee3/alltuners.rule;D:\Sdks\videodetectorandtracker_v2\CLBlast\Debug\clblast_tuner_routine_xtrsv.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\alltuners</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\alltuners</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+Release\clblast_tuner_copy_fast.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_copy_fast.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_copy_fast.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_copy_fast.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_copy_fast.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_copy_pad.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_copy_pad.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_copy_pad.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_copy_pad.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_copy_pad.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_transpose_fast.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_transpose_fast.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_transpose_fast.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_transpose_fast.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_transpose_fast.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_transpose_pad.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_transpose_pad.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_transpose_pad.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_transpose_pad.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_transpose_pad.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xaxpy.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xaxpy.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xaxpy.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xaxpy.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xaxpy.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xdot.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xdot.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xdot.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xdot.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xdot.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xger.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xger.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xger.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xger.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xger.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemm_direct.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemm_direct.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemm_direct.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemm_direct.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemm_direct.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemv.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemv.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemv.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemv.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemv.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_invert.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_invert.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_invert.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_invert.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_invert.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xconvgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xconvgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xconvgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xconvgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xconvgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_routine_xgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_routine_xgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_routine_xgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_routine_xgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_routine_xgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_routine_xtrsv.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_routine_xtrsv.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_routine_xtrsv.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_routine_xtrsv.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_routine_xtrsv.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+Release\clblast_tuner_copy_fast.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_copy_fast.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_copy_fast.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_copy_fast.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_copy_fast.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_copy_pad.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_copy_pad.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_copy_pad.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_copy_pad.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_copy_pad.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_transpose_fast.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_transpose_fast.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_transpose_fast.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_transpose_fast.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_transpose_fast.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_transpose_pad.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_transpose_pad.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_transpose_pad.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_transpose_pad.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_transpose_pad.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xaxpy.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xaxpy.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xaxpy.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xaxpy.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xaxpy.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xdot.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xdot.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xdot.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xdot.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xdot.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xger.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xger.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xger.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xger.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xger.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemm_direct.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemm_direct.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemm_direct.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemm_direct.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemm_direct.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemv.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemv.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemv.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemv.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xgemv.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_invert.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_invert.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_invert.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_invert.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_invert.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xconvgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xconvgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xconvgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xconvgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_xconvgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_routine_xgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_routine_xgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_routine_xgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_routine_xgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_routine_xgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_routine_xtrsv.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_routine_xtrsv.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_routine_xtrsv.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_routine_xtrsv.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+Release\clblast_tuner_routine_xtrsv.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/423a9f89b3c5402d6d3708f04a97bee3/alltuners.rule;D:\Sdks\videodetectorandtracker_v2\CLBlast\Release\clblast_tuner_routine_xtrsv.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/423a9f89b3c5402d6d3708f04a97bee3/alltuners.rule;D:\Sdks\videodetectorandtracker_v2\CLBlast\Release\clblast_tuner_routine_xtrsv.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\alltuners</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\alltuners</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+      </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+MinSizeRel\clblast_tuner_copy_fast.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_copy_fast.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_copy_fast.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_copy_fast.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_copy_fast.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_copy_pad.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_copy_pad.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_copy_pad.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_copy_pad.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_copy_pad.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_transpose_fast.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_transpose_fast.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_transpose_fast.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_transpose_fast.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_transpose_fast.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_transpose_pad.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_transpose_pad.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_transpose_pad.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_transpose_pad.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_transpose_pad.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xaxpy.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xaxpy.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xaxpy.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xaxpy.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xaxpy.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xdot.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xdot.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xdot.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xdot.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xdot.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xger.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xger.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xger.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xger.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xger.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemm_direct.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemm_direct.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemm_direct.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemm_direct.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemm_direct.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemv.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemv.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemv.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemv.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemv.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_invert.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_invert.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_invert.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_invert.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_invert.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xconvgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xconvgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xconvgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xconvgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xconvgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_routine_xgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_routine_xgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_routine_xgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_routine_xgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_routine_xgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_routine_xtrsv.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_routine_xtrsv.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_routine_xtrsv.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_routine_xtrsv.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_routine_xtrsv.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+MinSizeRel\clblast_tuner_copy_fast.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_copy_fast.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_copy_fast.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_copy_fast.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_copy_fast.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_copy_pad.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_copy_pad.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_copy_pad.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_copy_pad.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_copy_pad.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_transpose_fast.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_transpose_fast.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_transpose_fast.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_transpose_fast.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_transpose_fast.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_transpose_pad.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_transpose_pad.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_transpose_pad.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_transpose_pad.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_transpose_pad.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xaxpy.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xaxpy.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xaxpy.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xaxpy.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xaxpy.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xdot.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xdot.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xdot.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xdot.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xdot.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xger.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xger.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xger.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xger.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xger.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemm_direct.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemm_direct.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemm_direct.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemm_direct.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemm_direct.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemv.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemv.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemv.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemv.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xgemv.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_invert.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_invert.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_invert.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_invert.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_invert.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xconvgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xconvgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xconvgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xconvgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_xconvgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_routine_xgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_routine_xgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_routine_xgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_routine_xgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_routine_xgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_routine_xtrsv.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_routine_xtrsv.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_routine_xtrsv.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_routine_xtrsv.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+MinSizeRel\clblast_tuner_routine_xtrsv.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/423a9f89b3c5402d6d3708f04a97bee3/alltuners.rule;D:\Sdks\videodetectorandtracker_v2\CLBlast\MinSizeRel\clblast_tuner_routine_xtrsv.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/423a9f89b3c5402d6d3708f04a97bee3/alltuners.rule;D:\Sdks\videodetectorandtracker_v2\CLBlast\MinSizeRel\clblast_tuner_routine_xtrsv.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\alltuners</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\alltuners</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+      </Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+      </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+RelWithDebInfo\clblast_tuner_copy_fast.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_copy_fast.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_copy_fast.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_copy_fast.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_copy_fast.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_copy_pad.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_copy_pad.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_copy_pad.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_copy_pad.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_copy_pad.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_transpose_fast.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_transpose_fast.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_transpose_fast.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_transpose_fast.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_transpose_fast.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_transpose_pad.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_transpose_pad.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_transpose_pad.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_transpose_pad.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_transpose_pad.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xaxpy.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xaxpy.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xaxpy.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xaxpy.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xaxpy.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xdot.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xdot.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xdot.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xdot.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xdot.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xger.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xger.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xger.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xger.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xger.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemm_direct.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemm_direct.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemm_direct.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemm_direct.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemm_direct.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemv.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemv.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemv.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemv.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemv.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_invert.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_invert.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_invert.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_invert.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_invert.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xconvgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xconvgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xconvgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xconvgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xconvgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_routine_xgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_routine_xgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_routine_xgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_routine_xgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_routine_xgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_routine_xtrsv.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_routine_xtrsv.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_routine_xtrsv.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_routine_xtrsv.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_routine_xtrsv.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+RelWithDebInfo\clblast_tuner_copy_fast.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_copy_fast.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_copy_fast.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_copy_fast.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_copy_fast.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_copy_pad.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_copy_pad.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_copy_pad.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_copy_pad.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_copy_pad.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_transpose_fast.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_transpose_fast.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_transpose_fast.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_transpose_fast.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_transpose_fast.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_transpose_pad.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_transpose_pad.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_transpose_pad.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_transpose_pad.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_transpose_pad.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xaxpy.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xaxpy.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xaxpy.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xaxpy.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xaxpy.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xdot.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xdot.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xdot.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xdot.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xdot.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xger.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xger.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xger.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xger.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xger.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemm_direct.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemm_direct.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemm_direct.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemm_direct.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemm_direct.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemv.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemv.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemv.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemv.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xgemv.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_invert.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_invert.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_invert.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_invert.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_invert.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xconvgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xconvgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xconvgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xconvgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_xconvgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_routine_xgemm.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_routine_xgemm.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_routine_xgemm.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_routine_xgemm.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_routine_xgemm.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_routine_xtrsv.exe -precision 32
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_routine_xtrsv.exe -precision 64
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_routine_xtrsv.exe -precision 3232
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_routine_xtrsv.exe -precision 6464
+if %errorlevel% neq 0 goto :cmEnd
+RelWithDebInfo\clblast_tuner_routine_xtrsv.exe -precision 16
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/423a9f89b3c5402d6d3708f04a97bee3/alltuners.rule;D:\Sdks\videodetectorandtracker_v2\CLBlast\RelWithDebInfo\clblast_tuner_routine_xtrsv.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/423a9f89b3c5402d6d3708f04a97bee3/alltuners.rule;D:\Sdks\videodetectorandtracker_v2\CLBlast\RelWithDebInfo\clblast_tuner_routine_xtrsv.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\alltuners</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\alltuners</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\alltuners" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\ZERO_CHECK.vcxproj">
+      <Project>{077FCFEE-037A-322D-92B9-0108072B54BF}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\clblast_tuner_copy_fast.vcxproj">
+      <Project>{A0894632-1C61-3068-B860-22255CD13F7B}</Project>
+      <Name>clblast_tuner_copy_fast</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\clblast_tuner_copy_pad.vcxproj">
+      <Project>{52C268C9-B74C-323B-A038-92DFD5C2FAE0}</Project>
+      <Name>clblast_tuner_copy_pad</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\clblast_tuner_invert.vcxproj">
+      <Project>{37C184FD-6C45-36DC-B147-49213C27302D}</Project>
+      <Name>clblast_tuner_invert</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\clblast_tuner_routine_xgemm.vcxproj">
+      <Project>{25C3E279-47F4-3482-BAFB-533C539660E3}</Project>
+      <Name>clblast_tuner_routine_xgemm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\clblast_tuner_routine_xtrsv.vcxproj">
+      <Project>{55FB3E76-42B5-3DCD-9A8E-93EBA543FE9F}</Project>
+      <Name>clblast_tuner_routine_xtrsv</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\clblast_tuner_transpose_fast.vcxproj">
+      <Project>{E60849E7-44CB-325D-AB0F-174719D5DBD0}</Project>
+      <Name>clblast_tuner_transpose_fast</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\clblast_tuner_transpose_pad.vcxproj">
+      <Project>{DE685E0D-CFFF-3D05-9696-4E4C0AF983BE}</Project>
+      <Name>clblast_tuner_transpose_pad</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\clblast_tuner_xaxpy.vcxproj">
+      <Project>{AD6F247E-2BCF-3DDA-9CEE-7EDF70EAA0E0}</Project>
+      <Name>clblast_tuner_xaxpy</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\clblast_tuner_xconvgemm.vcxproj">
+      <Project>{A4E1C6DA-E77E-3527-8089-E76B28C67D62}</Project>
+      <Name>clblast_tuner_xconvgemm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\clblast_tuner_xdot.vcxproj">
+      <Project>{BB9F9298-A985-3535-83DC-207D1233056C}</Project>
+      <Name>clblast_tuner_xdot</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\clblast_tuner_xgemm.vcxproj">
+      <Project>{73083EC7-CD22-3778-84F0-C8CC6669B990}</Project>
+      <Name>clblast_tuner_xgemm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\clblast_tuner_xgemm_direct.vcxproj">
+      <Project>{770D62EF-DFDC-3984-A13D-D5AFF8296A55}</Project>
+      <Name>clblast_tuner_xgemm_direct</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\clblast_tuner_xgemv.vcxproj">
+      <Project>{92A8F462-C4C5-32D8-94CD-0BCEE24C80B1}</Project>
+      <Name>clblast_tuner_xgemv</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\clblast_tuner_xger.vcxproj">
+      <Project>{3115D991-9879-3762-A8F1-BD627AEE169B}</Project>
+      <Name>clblast_tuner_xger</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

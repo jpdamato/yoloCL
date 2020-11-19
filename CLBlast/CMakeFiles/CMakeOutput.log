@@ -1,0 +1,762 @@
+The system is: Windows - 10.0.17134 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine versi�n 15.8.169+g1ccb72aefa para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci�n iniciada a las 1/7/2019 09:24:15.
+Proyecto "D:\Sdks\Yolo\CLBlast\CMakeFiles\3.12.1\CompilerIdC\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "Debug\".
+  Creando directorio "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Se crear� "Debug\CompilerIdC.tlog\unsuccessfulbuild" porque se especific� "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> D:\Sdks\Yolo\CLBlast\CMakeFiles\3.12.1\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x86\cl.exe
+FinalizeBuildStatus:
+  Se eliminar� el archivo "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Compilaci�n del proyecto terminada "D:\Sdks\Yolo\CLBlast\CMakeFiles\3.12.1\CompilerIdC\CompilerIdC.vcxproj" (destinos predeterminados).
+
+Compilaci�n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:00.97
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "D:/Sdks/Yolo/CLBlast/CMakeFiles/3.12.1/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine versi�n 15.8.169+g1ccb72aefa para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci�n iniciada a las 1/7/2019 09:24:16.
+Proyecto "D:\Sdks\Yolo\CLBlast\CMakeFiles\3.12.1\CompilerIdCXX\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "Debug\".
+  Creando directorio "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Se crear� "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" porque se especific� "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> D:\Sdks\Yolo\CLBlast\CMakeFiles\3.12.1\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x86\cl.exe
+FinalizeBuildStatus:
+  Se eliminar� el archivo "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Compilaci�n del proyecto terminada "D:\Sdks\Yolo\CLBlast\CMakeFiles\3.12.1\CompilerIdCXX\CompilerIdCXX.vcxproj" (destinos predeterminados).
+
+Compilaci�n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:01.35
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "D:/Sdks/Yolo/CLBlast/CMakeFiles/3.12.1/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: D:/Sdks/Yolo/CLBlast/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_6151a.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine versión 15.8.169+g1ccb72aefa para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilación iniciada a las 1/7/2019 09:24:18.
+Proyecto "D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\cmTC_6151a.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_6151a.dir\Debug\".
+  Creando directorio "D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_6151a.dir\Debug\cmTC_6151a.tlog\".
+InitializeBuildStatus:
+  Se creará "cmTC_6151a.dir\Debug\cmTC_6151a.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6151a.dir\Debug\\" /Fd"cmTC_6151a.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\testCCompiler.c
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.15.26730 para x86
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6151a.dir\Debug\\" /Fd"cmTC_6151a.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\testCCompiler.c
+  testCCompiler.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_6151a.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Sdks/Yolo/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_6151a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Sdks/Yolo/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_6151a.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_6151a.dir\Debug\testCCompiler.obj
+  cmTC_6151a.vcxproj -> D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_6151a.exe
+FinalizeBuildStatus:
+  Se eliminará el archivo "cmTC_6151a.dir\Debug\cmTC_6151a.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_6151a.dir\Debug\cmTC_6151a.tlog\cmTC_6151a.lastbuildstate".
+Compilación del proyecto terminada "D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\cmTC_6151a.vcxproj" (destinos predeterminados).
+
+Compilación correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:02.79
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: D:/Sdks/Yolo/CLBlast/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_a9880.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine versión 15.8.169+g1ccb72aefa para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilación iniciada a las 1/7/2019 09:24:21.
+Proyecto "D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\cmTC_a9880.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_a9880.dir\Debug\".
+  Creando directorio "D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_a9880.dir\Debug\cmTC_a9880.tlog\".
+InitializeBuildStatus:
+  Se creará "cmTC_a9880.dir\Debug\cmTC_a9880.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a9880.dir\Debug\\" /Fd"cmTC_a9880.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.15.26730 para x86
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a9880.dir\Debug\\" /Fd"cmTC_a9880.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
+  CMakeCCompilerABI.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_a9880.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Sdks/Yolo/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_a9880.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Sdks/Yolo/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_a9880.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_a9880.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_a9880.vcxproj -> D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_a9880.exe
+FinalizeBuildStatus:
+  Se eliminará el archivo "cmTC_a9880.dir\Debug\cmTC_a9880.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_a9880.dir\Debug\cmTC_a9880.tlog\cmTC_a9880.lastbuildstate".
+Compilación del proyecto terminada "D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\cmTC_a9880.vcxproj" (destinos predeterminados).
+
+Compilación correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:01.42
+
+
+
+
+Detecting C [] compiler features compiled with the following output:
+Change Dir: D:/Sdks/Yolo/CLBlast/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_ee3d8.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine versión 15.8.169+g1ccb72aefa para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilación iniciada a las 1/7/2019 09:24:22.
+Proyecto "D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\cmTC_ee3d8.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_ee3d8.dir\Debug\".
+  Creando directorio "D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_ee3d8.dir\Debug\cmTC_ee3d8.tlog\".
+InitializeBuildStatus:
+  Se creará "cmTC_ee3d8.dir\Debug\cmTC_ee3d8.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ee3d8.dir\Debug\\" /Fd"cmTC_ee3d8.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue D:\Sdks\Yolo\CLBlast\CMakeFiles\feature_tests.c
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.15.26730 para x86
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ee3d8.dir\Debug\\" /Fd"cmTC_ee3d8.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue D:\Sdks\Yolo\CLBlast\CMakeFiles\feature_tests.c
+  feature_tests.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_ee3d8.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Sdks/Yolo/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_ee3d8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Sdks/Yolo/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_ee3d8.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_ee3d8.dir\Debug\feature_tests.obj
+  cmTC_ee3d8.vcxproj -> D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_ee3d8.exe
+FinalizeBuildStatus:
+  Se eliminará el archivo "cmTC_ee3d8.dir\Debug\cmTC_ee3d8.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_ee3d8.dir\Debug\cmTC_ee3d8.tlog\cmTC_ee3d8.lastbuildstate".
+Compilación del proyecto terminada "D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\cmTC_ee3d8.vcxproj" (destinos predeterminados).
+
+Compilación correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:01.46
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: D:/Sdks/Yolo/CLBlast/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_b9b6b.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine versión 15.8.169+g1ccb72aefa para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilación iniciada a las 1/7/2019 09:24:24.
+Proyecto "D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\cmTC_b9b6b.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_b9b6b.dir\Debug\".
+  Creando directorio "D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_b9b6b.dir\Debug\cmTC_b9b6b.tlog\".
+InitializeBuildStatus:
+  Se creará "cmTC_b9b6b.dir\Debug\cmTC_b9b6b.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_b9b6b.dir\Debug\\" /Fd"cmTC_b9b6b.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.15.26730 para x86
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_b9b6b.dir\Debug\\" /Fd"cmTC_b9b6b.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  testCXXCompiler.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_b9b6b.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Sdks/Yolo/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_b9b6b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Sdks/Yolo/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_b9b6b.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_b9b6b.dir\Debug\testCXXCompiler.obj
+  cmTC_b9b6b.vcxproj -> D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_b9b6b.exe
+FinalizeBuildStatus:
+  Se eliminará el archivo "cmTC_b9b6b.dir\Debug\cmTC_b9b6b.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_b9b6b.dir\Debug\cmTC_b9b6b.tlog\cmTC_b9b6b.lastbuildstate".
+Compilación del proyecto terminada "D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\cmTC_b9b6b.vcxproj" (destinos predeterminados).
+
+Compilación correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:01.51
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: D:/Sdks/Yolo/CLBlast/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_1901f.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine versión 15.8.169+g1ccb72aefa para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilación iniciada a las 1/7/2019 09:24:26.
+Proyecto "D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\cmTC_1901f.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_1901f.dir\Debug\".
+  Creando directorio "D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_1901f.dir\Debug\cmTC_1901f.tlog\".
+InitializeBuildStatus:
+  Se creará "cmTC_1901f.dir\Debug\cmTC_1901f.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1901f.dir\Debug\\" /Fd"cmTC_1901f.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.15.26730 para x86
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_1901f.dir\Debug\\" /Fd"cmTC_1901f.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
+  CMakeCXXCompilerABI.cpp
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_1901f.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Sdks/Yolo/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_1901f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Sdks/Yolo/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_1901f.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_1901f.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_1901f.vcxproj -> D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_1901f.exe
+FinalizeBuildStatus:
+  Se eliminará el archivo "cmTC_1901f.dir\Debug\cmTC_1901f.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_1901f.dir\Debug\cmTC_1901f.tlog\cmTC_1901f.lastbuildstate".
+Compilación del proyecto terminada "D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\cmTC_1901f.vcxproj" (destinos predeterminados).
+
+Compilación correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:01.46
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: D:/Sdks/Yolo/CLBlast/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_2fdf3.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine versión 15.8.169+g1ccb72aefa para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilación iniciada a las 1/7/2019 09:24:28.
+Proyecto "D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\cmTC_2fdf3.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_2fdf3.dir\Debug\".
+  Creando directorio "D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_2fdf3.dir\Debug\cmTC_2fdf3.tlog\".
+InitializeBuildStatus:
+  Se creará "cmTC_2fdf3.dir\Debug\cmTC_2fdf3.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2fdf3.dir\Debug\\" /Fd"cmTC_2fdf3.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue D:\Sdks\Yolo\CLBlast\CMakeFiles\feature_tests.cxx
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.15.26730 para x86
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2fdf3.dir\Debug\\" /Fd"cmTC_2fdf3.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue D:\Sdks\Yolo\CLBlast\CMakeFiles\feature_tests.cxx
+  feature_tests.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_2fdf3.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Sdks/Yolo/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_2fdf3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Sdks/Yolo/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_2fdf3.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_2fdf3.dir\Debug\feature_tests.obj
+  cmTC_2fdf3.vcxproj -> D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_2fdf3.exe
+FinalizeBuildStatus:
+  Se eliminará el archivo "cmTC_2fdf3.dir\Debug\cmTC_2fdf3.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_2fdf3.dir\Debug\cmTC_2fdf3.tlog\cmTC_2fdf3.lastbuildstate".
+Compilación del proyecto terminada "D:\Sdks\Yolo\CLBlast\CMakeFiles\CMakeTmp\cmTC_2fdf3.vcxproj" (destinos predeterminados).
+
+Compilación correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:01.54
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+The system is: Windows - 10.0.18362 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine versi�n 15.8.169+g1ccb72aefa para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci�n iniciada a las 14/1/2020 11:41:32.
+Proyecto "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CompilerIdC\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "Debug\".
+  Creando directorio "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Se crear� "Debug\CompilerIdC.tlog\unsuccessfulbuild" porque se especific� "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x86\cl.exe
+FinalizeBuildStatus:
+  Se eliminar� el archivo "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Compilaci�n del proyecto terminada "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CompilerIdC\CompilerIdC.vcxproj" (destinos predeterminados).
+
+Compilaci�n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:01.59
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/3.12.1/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine versi�n 15.8.169+g1ccb72aefa para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilaci�n iniciada a las 14/1/2020 11:41:34.
+Proyecto "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CompilerIdCXX\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "Debug\".
+  Creando directorio "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Se crear� "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" porque se especific� "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\Hostx86\x86\cl.exe
+FinalizeBuildStatus:
+  Se eliminar� el archivo "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Compilaci�n del proyecto terminada "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CompilerIdCXX\CompilerIdCXX.vcxproj" (destinos predeterminados).
+
+Compilaci�n correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:00.80
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/3.12.1/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_99be0.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine versión 15.8.169+g1ccb72aefa para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilación iniciada a las 14/1/2020 11:41:35.
+Proyecto "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\cmTC_99be0.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_99be0.dir\Debug\".
+  Creando directorio "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_99be0.dir\Debug\cmTC_99be0.tlog\".
+InitializeBuildStatus:
+  Se creará "cmTC_99be0.dir\Debug\cmTC_99be0.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_99be0.dir\Debug\\" /Fd"cmTC_99be0.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\testCCompiler.c
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.15.26730 para x86
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_99be0.dir\Debug\\" /Fd"cmTC_99be0.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\testCCompiler.c
+  testCCompiler.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_99be0.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_99be0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_99be0.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_99be0.dir\Debug\testCCompiler.obj
+  cmTC_99be0.vcxproj -> D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_99be0.exe
+FinalizeBuildStatus:
+  Se eliminará el archivo "cmTC_99be0.dir\Debug\cmTC_99be0.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_99be0.dir\Debug\cmTC_99be0.tlog\cmTC_99be0.lastbuildstate".
+Compilación del proyecto terminada "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\cmTC_99be0.vcxproj" (destinos predeterminados).
+
+Compilación correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:01.83
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_cb4f1.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine versión 15.8.169+g1ccb72aefa para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilación iniciada a las 14/1/2020 11:41:38.
+Proyecto "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\cmTC_cb4f1.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_cb4f1.dir\Debug\".
+  Creando directorio "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_cb4f1.dir\Debug\cmTC_cb4f1.tlog\".
+InitializeBuildStatus:
+  Se creará "cmTC_cb4f1.dir\Debug\cmTC_cb4f1.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cb4f1.dir\Debug\\" /Fd"cmTC_cb4f1.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.15.26730 para x86
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cb4f1.dir\Debug\\" /Fd"cmTC_cb4f1.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c"
+  CMakeCCompilerABI.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_cb4f1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_cb4f1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_cb4f1.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_cb4f1.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_cb4f1.vcxproj -> D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_cb4f1.exe
+FinalizeBuildStatus:
+  Se eliminará el archivo "cmTC_cb4f1.dir\Debug\cmTC_cb4f1.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_cb4f1.dir\Debug\cmTC_cb4f1.tlog\cmTC_cb4f1.lastbuildstate".
+Compilación del proyecto terminada "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\cmTC_cb4f1.vcxproj" (destinos predeterminados).
+
+Compilación correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:01.43
+
+
+
+
+Detecting C [] compiler features compiled with the following output:
+Change Dir: D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_4a0c5.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine versión 15.8.169+g1ccb72aefa para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilación iniciada a las 14/1/2020 11:41:40.
+Proyecto "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\cmTC_4a0c5.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_4a0c5.dir\Debug\".
+  Creando directorio "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_4a0c5.dir\Debug\cmTC_4a0c5.tlog\".
+InitializeBuildStatus:
+  Se creará "cmTC_4a0c5.dir\Debug\cmTC_4a0c5.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4a0c5.dir\Debug\\" /Fd"cmTC_4a0c5.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\feature_tests.c
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.15.26730 para x86
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_4a0c5.dir\Debug\\" /Fd"cmTC_4a0c5.dir\Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\feature_tests.c
+  feature_tests.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_4a0c5.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_4a0c5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_4a0c5.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_4a0c5.dir\Debug\feature_tests.obj
+  cmTC_4a0c5.vcxproj -> D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_4a0c5.exe
+FinalizeBuildStatus:
+  Se eliminará el archivo "cmTC_4a0c5.dir\Debug\cmTC_4a0c5.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_4a0c5.dir\Debug\cmTC_4a0c5.tlog\cmTC_4a0c5.lastbuildstate".
+Compilación del proyecto terminada "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\cmTC_4a0c5.vcxproj" (destinos predeterminados).
+
+Compilación correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:01.53
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_3da3e.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine versión 15.8.169+g1ccb72aefa para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilación iniciada a las 14/1/2020 11:41:42.
+Proyecto "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\cmTC_3da3e.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_3da3e.dir\Debug\".
+  Creando directorio "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_3da3e.dir\Debug\cmTC_3da3e.tlog\".
+InitializeBuildStatus:
+  Se creará "cmTC_3da3e.dir\Debug\cmTC_3da3e.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_3da3e.dir\Debug\\" /Fd"cmTC_3da3e.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.15.26730 para x86
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_3da3e.dir\Debug\\" /Fd"cmTC_3da3e.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+  testCXXCompiler.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_3da3e.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_3da3e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_3da3e.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_3da3e.dir\Debug\testCXXCompiler.obj
+  cmTC_3da3e.vcxproj -> D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_3da3e.exe
+FinalizeBuildStatus:
+  Se eliminará el archivo "cmTC_3da3e.dir\Debug\cmTC_3da3e.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_3da3e.dir\Debug\cmTC_3da3e.tlog\cmTC_3da3e.lastbuildstate".
+Compilación del proyecto terminada "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\cmTC_3da3e.vcxproj" (destinos predeterminados).
+
+Compilación correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:01.45
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_7de38.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine versión 15.8.169+g1ccb72aefa para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilación iniciada a las 14/1/2020 11:41:43.
+Proyecto "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\cmTC_7de38.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_7de38.dir\Debug\".
+  Creando directorio "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_7de38.dir\Debug\cmTC_7de38.tlog\".
+InitializeBuildStatus:
+  Se creará "cmTC_7de38.dir\Debug\cmTC_7de38.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_7de38.dir\Debug\\" /Fd"cmTC_7de38.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.15.26730 para x86
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_7de38.dir\Debug\\" /Fd"cmTC_7de38.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp"
+  CMakeCXXCompilerABI.cpp
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_7de38.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_7de38.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_7de38.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_7de38.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_7de38.vcxproj -> D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_7de38.exe
+FinalizeBuildStatus:
+  Se eliminará el archivo "cmTC_7de38.dir\Debug\cmTC_7de38.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_7de38.dir\Debug\cmTC_7de38.tlog\cmTC_7de38.lastbuildstate".
+Compilación del proyecto terminada "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\cmTC_7de38.vcxproj" (destinos predeterminados).
+
+Compilación correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:01.55
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_72af9.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine versión 15.8.169+g1ccb72aefa para .NET Framework
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Compilación iniciada a las 14/1/2020 11:41:46.
+Proyecto "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\cmTC_72af9.vcxproj" en nodo 1 (destinos predeterminados).
+PrepareForBuild:
+  Creando directorio "cmTC_72af9.dir\Debug\".
+  Creando directorio "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\Debug\".
+  Creando directorio "cmTC_72af9.dir\Debug\cmTC_72af9.tlog\".
+InitializeBuildStatus:
+  Se creará "cmTC_72af9.dir\Debug\cmTC_72af9.tlog\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_72af9.dir\Debug\\" /Fd"cmTC_72af9.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\feature_tests.cxx
+  Compilador de optimización de C/C++ de Microsoft (R) versión 19.15.26730 para x86
+  (C) Microsoft Corporation. Todos los derechos reservados.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_72af9.dir\Debug\\" /Fd"cmTC_72af9.dir\Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\feature_tests.cxx
+  feature_tests.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\VC\Tools\MSVC\14.15.26726\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_72af9.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_72af9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/CMakeTmp/Debug/cmTC_72af9.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_72af9.dir\Debug\feature_tests.obj
+  cmTC_72af9.vcxproj -> D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\Debug\cmTC_72af9.exe
+FinalizeBuildStatus:
+  Se eliminará el archivo "cmTC_72af9.dir\Debug\cmTC_72af9.tlog\unsuccessfulbuild".
+  Aplicando tarea Touch a "cmTC_72af9.dir\Debug\cmTC_72af9.tlog\cmTC_72af9.lastbuildstate".
+Compilación del proyecto terminada "D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\CMakeTmp\cmTC_72af9.vcxproj" (destinos predeterminados).
+
+Compilación correcta.
+    0 Advertencia(s)
+    0 Errores
+
+Tiempo transcurrido 00:00:01.52
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates

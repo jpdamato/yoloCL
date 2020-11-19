@@ -1,0 +1,906 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5F4B9211-B25E-3EE9-BCE2-C6843CB86748}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>clblast</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Sdks\videodetectorandtracker_v2\CLBlast\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">clblast.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">clblast</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">clblast</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Sdks\videodetectorandtracker_v2\CLBlast\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">clblast.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">clblast</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">clblast</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Sdks\videodetectorandtracker_v2\CLBlast\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">clblast.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">clblast</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">clblast</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Sdks\videodetectorandtracker_v2\CLBlast\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">clblast.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">clblast</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">clblast</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\bin\x64\Release\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4715</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_DEBUG;CLBLAST_DLL;COMPILING_DLL=1;OPENCL_API;CMAKE_INTDIR="Debug";clblast_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;CLBLAST_DLL;COMPILING_DLL=1;OPENCL_API;CMAKE_INTDIR=\"Debug\";clblast_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64\OpenCL.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Sdks/videodetectorandtracker_v2/CLBlast/Debug/clblast.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Sdks/videodetectorandtracker_v2/CLBlast/Debug/clblast.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4715</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;_DEBUG;CLBLAST_DLL;COMPILING_DLL=1;OPENCL_API;CMAKE_INTDIR="Debug";clblast_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;CLBLAST_DLL;COMPILING_DLL=1;OPENCL_API;CMAKE_INTDIR=\"Debug\";clblast_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64\OpenCL.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Sdks/videodetectorandtracker_v2/CLBlast/Debug/clblast.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Sdks/videodetectorandtracker_v2/CLBlast/Debug/clblast.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4715</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;CLBLAST_DLL;COMPILING_DLL=1;OPENCL_API;CMAKE_INTDIR="Release";clblast_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;CLBLAST_DLL;COMPILING_DLL=1;OPENCL_API;CMAKE_INTDIR=\"Release\";clblast_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64\OpenCL.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Sdks/videodetectorandtracker_v2/CLBlast/Release/clblast.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Sdks/videodetectorandtracker_v2/CLBlast/Release/clblast.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4715</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;CLBLAST_DLL;COMPILING_DLL=1;OPENCL_API;CMAKE_INTDIR="Release";clblast_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;CLBLAST_DLL;COMPILING_DLL=1;OPENCL_API;CMAKE_INTDIR=\"Release\";clblast_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64\OpenCL.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Sdks/videodetectorandtracker_v2/CLBlast/Release/clblast.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Sdks/videodetectorandtracker_v2/CLBlast/Release/clblast.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4715</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;CLBLAST_DLL;COMPILING_DLL=1;OPENCL_API;CMAKE_INTDIR="MinSizeRel";clblast_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;CLBLAST_DLL;COMPILING_DLL=1;OPENCL_API;CMAKE_INTDIR=\"MinSizeRel\";clblast_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64\OpenCL.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Sdks/videodetectorandtracker_v2/CLBlast/MinSizeRel/clblast.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Sdks/videodetectorandtracker_v2/CLBlast/MinSizeRel/clblast.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4715</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;CLBLAST_DLL;COMPILING_DLL=1;OPENCL_API;CMAKE_INTDIR="MinSizeRel";clblast_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;CLBLAST_DLL;COMPILING_DLL=1;OPENCL_API;CMAKE_INTDIR=\"MinSizeRel\";clblast_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64\OpenCL.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Sdks/videodetectorandtracker_v2/CLBlast/MinSizeRel/clblast.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Sdks/videodetectorandtracker_v2/CLBlast/MinSizeRel/clblast.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4715</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;CLBLAST_DLL;COMPILING_DLL=1;OPENCL_API;CMAKE_INTDIR="RelWithDebInfo";clblast_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;CLBLAST_DLL;COMPILING_DLL=1;OPENCL_API;CMAKE_INTDIR=\"RelWithDebInfo\";clblast_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64\OpenCL.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Sdks/videodetectorandtracker_v2/CLBlast/RelWithDebInfo/clblast.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Sdks/videodetectorandtracker_v2/CLBlast/RelWithDebInfo/clblast.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4715</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;CLBLAST_DLL;COMPILING_DLL=1;OPENCL_API;CMAKE_INTDIR="RelWithDebInfo";clblast_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;NDEBUG;CLBLAST_DLL;COMPILING_DLL=1;OPENCL_API;CMAKE_INTDIR=\"RelWithDebInfo\";clblast_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\lib\x64\OpenCL.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Sdks/videodetectorandtracker_v2/CLBlast/RelWithDebInfo/clblast.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Sdks/videodetectorandtracker_v2/CLBlast/RelWithDebInfo/clblast.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master -BD:/Sdks/videodetectorandtracker_v2/CLBlast --check-stamp-file D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master -BD:/Sdks/videodetectorandtracker_v2/CLBlast --check-stamp-file D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\CMakeLists.txt;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\Modules\FindOpenCL.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\c_flag_overrides.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\cxx_flag_overrides.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeCCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeCXXCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeRCCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeSystem.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\feature_tests.c;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\feature_tests.cxx;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\CMakeLists.txt;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\Modules\FindOpenCL.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\c_flag_overrides.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\cxx_flag_overrides.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeCCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeCXXCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeRCCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeSystem.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\feature_tests.c;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\feature_tests.cxx;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master -BD:/Sdks/videodetectorandtracker_v2/CLBlast --check-stamp-file D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master -BD:/Sdks/videodetectorandtracker_v2/CLBlast --check-stamp-file D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\CMakeLists.txt;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\Modules\FindOpenCL.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\c_flag_overrides.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\cxx_flag_overrides.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeCCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeCXXCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeRCCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeSystem.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\feature_tests.c;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\feature_tests.cxx;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\CMakeLists.txt;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\Modules\FindOpenCL.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\c_flag_overrides.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\cxx_flag_overrides.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeCCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeCXXCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeRCCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeSystem.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\feature_tests.c;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\feature_tests.cxx;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master -BD:/Sdks/videodetectorandtracker_v2/CLBlast --check-stamp-file D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master -BD:/Sdks/videodetectorandtracker_v2/CLBlast --check-stamp-file D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\CMakeLists.txt;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\Modules\FindOpenCL.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\c_flag_overrides.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\cxx_flag_overrides.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeCCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeCXXCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeRCCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeSystem.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\feature_tests.c;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\feature_tests.cxx;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\CMakeLists.txt;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\Modules\FindOpenCL.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\c_flag_overrides.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\cxx_flag_overrides.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeCCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeCXXCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeRCCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeSystem.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\feature_tests.c;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\feature_tests.cxx;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master -BD:/Sdks/videodetectorandtracker_v2/CLBlast --check-stamp-file D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HD:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master -BD:/Sdks/videodetectorandtracker_v2/CLBlast --check-stamp-file D:/Sdks/videodetectorandtracker_v2/CLBlast/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\CMakeLists.txt;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\Modules\FindOpenCL.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\c_flag_overrides.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\cxx_flag_overrides.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeCCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeCXXCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeRCCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeSystem.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\feature_tests.c;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\feature_tests.cxx;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Sdks/videodetectorandtracker_v2/CLBlast/CLBlast-master/CMakeLists.txt;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX-FeatureTests.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\CMakeLists.txt;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\Modules\FindOpenCL.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\c_flag_overrides.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\cmake\cxx_flag_overrides.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeCCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeCXXCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeRCCompiler.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\3.12.1\CMakeSystem.cmake;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\feature_tests.c;D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\feature_tests.cxx;D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Sdks\videodetectorandtracker_v2\CLBlast\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\database.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\common.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\utilities\compile.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\utilities\clblast_exceptions.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\utilities\timing.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\utilities\utilities.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\api_common.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\cache.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\kernel_preprocessor.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routine.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\levelx\xinvert.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\configurations.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\clblast.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\clblast_c.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\tuning_api.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xswap.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xscal.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xcopy.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xaxpy.cpp">
+      <ObjectFileName>$(IntDir)/src/routines/level1/xaxpy.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xdot.cpp">
+      <ObjectFileName>$(IntDir)/src/routines/level1/xdot.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xdotu.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xdotc.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xnrm2.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xasum.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xamax.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xgemv.cpp">
+      <ObjectFileName>$(IntDir)/src/routines/level2/xgemv.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xgbmv.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xhemv.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xhbmv.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xhpmv.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xsymv.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xsbmv.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xspmv.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xtrmv.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xtbmv.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xtpmv.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xtrsv.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xger.cpp">
+      <ObjectFileName>$(IntDir)/src/routines/level2/xger.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xgeru.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xgerc.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xher.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xhpr.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xher2.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xhpr2.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xsyr.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xspr.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xsyr2.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xspr2.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level3\xgemm.cpp">
+      <ObjectFileName>$(IntDir)/src/routines/level3/xgemm.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level3\xsymm.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level3\xhemm.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level3\xsyrk.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level3\xherk.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level3\xsyr2k.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level3\xher2k.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level3\xtrmm.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level3\xtrsm.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\levelx\xhad.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\levelx\xomatcopy.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\levelx\xim2col.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\levelx\xcol2im.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\levelx\xconvgemm.cpp">
+      <ObjectFileName>$(IntDir)/src/routines/levelx/xconvgemm.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\levelx\xaxpybatched.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\levelx\xgemmbatched.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\levelx\xgemmstridedbatched.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\copy\copy.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\pad\pad.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\padtranspose\padtranspose.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\transpose\transpose.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xaxpy\xaxpy.cpp">
+      <ObjectFileName>$(IntDir)/src/database/kernels/xaxpy/xaxpy.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xdot\xdot.cpp">
+      <ObjectFileName>$(IntDir)/src/database/kernels/xdot/xdot.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemm\xgemm.cpp">
+      <ObjectFileName>$(IntDir)/src/database/kernels/xgemm/xgemm.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemm_direct\xgemm_direct.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemv\xgemv.cpp">
+      <ObjectFileName>$(IntDir)/src/database/kernels/xgemv/xgemv.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemv_fast\xgemv_fast.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemv_fast_rot\xgemv_fast_rot.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xger\xger.cpp">
+      <ObjectFileName>$(IntDir)/src/database/kernels/xger/xger.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\invert\invert.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\gemm_routine\gemm_routine.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\trsv_routine\trsv_routine.cpp" />
+    <ClCompile Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xconvgemm\xconvgemm.cpp">
+      <ObjectFileName>$(IntDir)/src/database/kernels/xconvgemm/xconvgemm.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include\clblast_half.h" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\apple_cpu_fallback.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\database.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\database_structure.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xamin.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xmax.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xmin.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xsum.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\common.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\routines.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\utilities\buffer_test.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\utilities\compile.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\utilities\clblast_exceptions.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\utilities\device_mapping.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\utilities\msvc.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\utilities\timing.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\utilities\utilities.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\cache.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\kernel_preprocessor.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\cxpp11_common.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routine.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\configurations.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\tuning.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\routines\routine_tuner.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include\clblast.h" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\include\clblast_c.h" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\clpp11.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xswap.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xscal.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xcopy.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xaxpy.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xdot.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xdotu.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xdotc.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xnrm2.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xasum.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level1\xamax.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xgemv.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xgbmv.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xhemv.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xhbmv.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xhpmv.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xsymv.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xsbmv.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xspmv.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xtrmv.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xtbmv.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xtpmv.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xtrsv.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xger.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xgeru.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xgerc.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xher.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xhpr.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xher2.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xhpr2.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xsyr.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xspr.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xsyr2.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level2\xspr2.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level3\xgemm.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level3\xsymm.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level3\xhemm.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level3\xsyrk.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level3\xherk.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level3\xsyr2k.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level3\xher2k.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level3\xtrmm.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\level3\xtrsm.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\levelx\xhad.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\levelx\xomatcopy.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\levelx\xim2col.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\levelx\xcol2im.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\levelx\xconvgemm.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\levelx\xaxpybatched.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\levelx\xgemmbatched.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\routines\levelx\xgemmstridedbatched.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\copy\copy.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\copy\copy_16.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\copy\copy_32.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\copy\copy_64.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\copy\copy_3232.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\copy\copy_6464.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\pad\pad.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\pad\pad_16.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\pad\pad_32.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\pad\pad_64.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\pad\pad_3232.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\pad\pad_6464.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\padtranspose\padtranspose.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\padtranspose\padtranspose_16.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\padtranspose\padtranspose_32.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\padtranspose\padtranspose_64.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\padtranspose\padtranspose_3232.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\padtranspose\padtranspose_6464.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\transpose\transpose.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\transpose\transpose_16.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\transpose\transpose_32.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\transpose\transpose_64.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\transpose\transpose_3232.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\transpose\transpose_6464.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xaxpy\xaxpy.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xaxpy\xaxpy_16.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xaxpy\xaxpy_32.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xaxpy\xaxpy_64.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xaxpy\xaxpy_3232.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xaxpy\xaxpy_6464.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xdot\xdot.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xdot\xdot_16.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xdot\xdot_32.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xdot\xdot_64.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xdot\xdot_3232.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xdot\xdot_6464.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemm\xgemm.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemm\xgemm_16.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemm\xgemm_32.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemm\xgemm_64.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemm\xgemm_3232.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemm\xgemm_6464.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemm_direct\xgemm_direct.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemm_direct\xgemm_direct_16.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemm_direct\xgemm_direct_32.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemm_direct\xgemm_direct_64.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemm_direct\xgemm_direct_3232.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemm_direct\xgemm_direct_6464.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemv\xgemv.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemv\xgemv_16.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemv\xgemv_32.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemv\xgemv_64.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemv\xgemv_3232.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemv\xgemv_6464.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemv_fast\xgemv_fast.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemv_fast\xgemv_fast_16.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemv_fast\xgemv_fast_32.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemv_fast\xgemv_fast_64.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemv_fast\xgemv_fast_3232.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemv_fast\xgemv_fast_6464.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemv_fast_rot\xgemv_fast_rot.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemv_fast_rot\xgemv_fast_rot_16.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemv_fast_rot\xgemv_fast_rot_32.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemv_fast_rot\xgemv_fast_rot_64.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemv_fast_rot\xgemv_fast_rot_3232.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xgemv_fast_rot\xgemv_fast_rot_6464.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xger\xger.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xger\xger_16.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xger\xger_32.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xger\xger_64.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xger\xger_3232.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xger\xger_6464.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\invert\invert.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\invert\invert_16.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\invert\invert_32.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\invert\invert_64.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\invert\invert_3232.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\invert\invert_6464.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\gemm_routine\gemm_routine.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\gemm_routine\gemm_routine_16.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\gemm_routine\gemm_routine_32.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\gemm_routine\gemm_routine_64.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\gemm_routine\gemm_routine_3232.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\gemm_routine\gemm_routine_6464.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\trsv_routine\trsv_routine.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\trsv_routine\trsv_routine_16.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\trsv_routine\trsv_routine_32.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\trsv_routine\trsv_routine_64.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\trsv_routine\trsv_routine_3232.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\trsv_routine\trsv_routine_6464.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xconvgemm\xconvgemm.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xconvgemm\xconvgemm_16.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xconvgemm\xconvgemm_32.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xconvgemm\xconvgemm_64.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xconvgemm\xconvgemm_3232.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\database\kernels\xconvgemm\xconvgemm_6464.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\kernels\copy_fast.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\kernels\copy_pad.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\kernels\transpose_fast.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\kernels\transpose_pad.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\kernels\xaxpy.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\kernels\xdot.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\kernels\xger.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\kernels\xgemm.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\kernels\xgemm_direct.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\kernels\xgemv.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\kernels\invert.hpp" />
+    <ClInclude Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\CLBlast-master\src\tuning\kernels\xconvgemm.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Sdks\videodetectorandtracker_v2\CLBlast\ZERO_CHECK.vcxproj">
+      <Project>{077FCFEE-037A-322D-92B9-0108072B54BF}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
